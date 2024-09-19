@@ -1,0 +1,49 @@
+.container {
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #FFFFFF;
+    overflow-y: auto;
+  
+  }
+
+  .main {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    background-color: #FFFFFF;
+  }
+
+ /* Estilos para telas menores (dispositivos móveis) */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .main {
+    margin-top: 1rem;
+    flex-direction: column;
+    display: flex;
+    flex: column;
+  }
+
+  .card {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .taskList {
+    padding: 1rem;
+  }
+
+  .heading { 
+    font-size: 1.25rem; 
+  }
+
+  .fullWidthButton { 
+    width: 100%; 
+    padding: 1rem;
+  }
+}
+

@@ -1,0 +1,65 @@
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 600px; /* Largura máxima para telas grandes */
+  margin: 0 auto; /* Centraliza a lista em telas maiores */
+
+
+}
+
+.task, .completedTask {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Alinha todos os itens verticalmente ao centro */
+  border: 1px solid #D7DDE9;
+  padding: 1rem;
+  border-radius: 8px;
+  border-style: dashed;
+  cursor: pointer;
+  width: 100%;
+  color: #000000;
+
+  input {
+    margin-right: 1rem;
+  }
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ff4500;
+  }
+
+  &:hover {
+    background-color: #F7F9FD;
+  }
+
+  .text, .completedText {
+    display: flex;
+    align-items: center; /* Garante que o texto dentro também esteja centralizado verticalmente */
+  }
+}
+
+.addTask {
+  background-image: linear-gradient(135deg, #0896D3, #53C0EF);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+
+}
+
+.completedText {
+  color: #aaa; /* A cor do texto mudará para cinza claro */
+  text-decoration: line-through; /* Aplica o risco ao texto */
+}
+
+.text {
+  color: #000; /* A cor do texto normal (não riscado) */
+}
